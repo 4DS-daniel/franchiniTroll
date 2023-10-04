@@ -29,7 +29,7 @@ public class Main {
             System.out.println("Vuoi contiuare il combattimento? Premi 1 per continuare o 2 per uscire: \nScelta: ");
             flag = input.nextInt();
             if (flag == 2) {
-                System.out.println("Uscira combattimento!");
+                System.out.println("Uscita combattimento!");
             }
         } while (troll.getHp() > 0 && life_player > 0 && flag != 2);
     }
