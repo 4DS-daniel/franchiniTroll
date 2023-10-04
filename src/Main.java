@@ -7,7 +7,10 @@ public class Main {
         System.out.println("Benvenuto guerriero nella terra dei Goblin, combatti per sopravvivere!");
 
         do {
-            System.out.println("Il guerriero attacca: " + rand.nextFloat(50, 100) );
+            float damage = rand.nextFloat(50, 100);
+            System.out.println("Il guerriero attacca: " + damage);
+            troll.setHp(troll.getHp()-damage);
+            System.out.println("- Vita del Troll: " + troll.getHp());
         } while (troll.getHp() > 0);
     }
 }
