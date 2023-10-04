@@ -24,4 +24,8 @@ public class Troll {
     public void setHp(float hp) {
         this.hp = hp;
     }
+
+    public void setGold(float gold) {
+        this.gold = gold;
+    }
 }
