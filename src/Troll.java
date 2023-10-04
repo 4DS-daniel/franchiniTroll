@@ -36,7 +36,7 @@ public class Troll {
     }
     public float attack() {
         Random rand = new Random();
-        return rand.nextFloat();
+        return rand.nextFloat(1,10);
     }
 
     @Override
