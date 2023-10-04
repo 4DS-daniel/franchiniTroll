@@ -8,7 +8,7 @@ public class Main {
         System.out.println("Benvenuto guerriero nella terra dei Goblin, combatti per sopravvivere!");
 
         do {
-            float damage = rand.nextFloat(50, 100);
+            int damage = rand.nextInt(50, 100);
             System.out.println("Il guerriero attacca: " + damage);
             troll.setHp(troll.getHp()-damage);
             System.out.println("- Vita del Troll: " + troll.getHp());
