@@ -16,4 +16,8 @@ public class Troll {
     public float getGold() {
         return gold;
     }
+
+    public float getXp() {
+        return xp;
+    }
 }
