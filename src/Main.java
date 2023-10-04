@@ -18,6 +18,6 @@ public class Main {
             life_player = life_player - damage;
             System.out.println("- Vita del Giocatore: " + life_player);
 
-        } while (troll.getHp() > 0);
+        } while (troll.getHp() > 0 && life_player > 0);
     }
 }
