@@ -34,4 +34,8 @@ public class Troll {
     public void setXp(float xp) {
         this.xp = xp;
     }
+    public float attack() {
+        Random rand = new Random();
+        return rand.nextFloat();
+    }
 }
