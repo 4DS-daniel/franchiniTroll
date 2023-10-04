@@ -12,15 +12,20 @@ public class Main {
 
         do {
             int damage = rand.nextInt(50, 100);
+            System.out.println("===============================");
             System.out.println("Il guerriero attacca: " + damage);
             troll.setHp(troll.getHp()-damage);
             System.out.println("- Vita del Troll: " + troll.getHp());
+            System.out.println("===============================");
+            if (troll.getHp() > 0) {
+                System.out.println("\n\n===============================");
+                damage = troll.attack();
+                System.out.println("Il Troll attacca: " + damage);
+                life_player = life_player - damage;
+                System.out.println("- Vita del Giocatore: " + life_player);
+                System.out.println("===============================\n\n");
+            }
 
-            flag = input.nextInt();
-            damage = troll.attack();
-            System.out.println("Il Troll attacca: " + damage);
-            life_player = life_player - damage;
-            System.out.println("- Vita del Giocatore: " + life_player);
             System.out.println("Vuoi contiuare il combattimento? Premi 1 per continuare o 2 per uscire: \nScelta: ");
             flag = input.nextInt();
             if (flag == 2) {
