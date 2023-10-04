@@ -8,4 +8,8 @@ public class Troll {
         this.gold = gold;
         this.xp = xp;
     }
+
+    public float getHp() {
+        return hp;
+    }
 }
