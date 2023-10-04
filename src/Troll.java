@@ -38,4 +38,13 @@ public class Troll {
         Random rand = new Random();
         return rand.nextFloat();
     }
+
+    @Override
+    public String toString() {
+        return "Troll{" +
+                "hp=" + hp +
+                ", gold=" + gold +
+                ", xp=" + xp +
+                '}';
+    }
 }
