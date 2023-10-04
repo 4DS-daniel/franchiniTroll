@@ -12,4 +12,8 @@ public class Troll {
     public float getHp() {
         return hp;
     }
+
+    public float getGold() {
+        return gold;
+    }
 }
