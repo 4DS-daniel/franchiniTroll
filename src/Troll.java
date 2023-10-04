@@ -20,4 +20,8 @@ public class Troll {
     public float getXp() {
         return xp;
     }
+
+    public void setHp(float hp) {
+        this.hp = hp;
+    }
 }
