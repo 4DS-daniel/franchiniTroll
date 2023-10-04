@@ -5,10 +5,10 @@ public class Troll {
     private float gold;
     private float xp;
 
-    public Troll(float hp, float gold, float xp) {
-        this.hp = hp;
-        this.gold = gold;
-        this.xp = xp;
+    public Troll() {
+        this.hp = 500;
+        this.gold = 200;
+        this.xp = 50;
     }
 
     public float getHp() {
