@@ -11,6 +11,12 @@ public class Main {
             System.out.println("Il guerriero attacca: " + damage);
             troll.setHp(troll.getHp()-damage);
             System.out.println("- Vita del Troll: " + troll.getHp());
+
+            damage = troll.attack();
+            System.out.println("Il Troll attacca: " + damage);
+            troll.setHp(troll.getHp()-damage);
+            System.out.println("- Vita del Troll: " + troll.getHp());
+
         } while (troll.getHp() > 0);
     }
 }
