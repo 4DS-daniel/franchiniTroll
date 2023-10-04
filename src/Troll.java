@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class Troll {
     private float hp;
     private float gold;
